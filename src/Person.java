@@ -4,6 +4,12 @@ import java.util.Random;
 
 import static java.lang.Math.abs;
 
+/**
+ * Пользователи - потоки
+ * единственная логика которых, выбирать рандомно место, пока они его успешно не забронируют
+ * после чего могут уходить и придёт следующий пользователь
+ */
+
 public class Person extends Thread {
 
     private List<Terminal> terminals;
